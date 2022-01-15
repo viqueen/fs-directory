@@ -1,6 +1,11 @@
-import { project } from './index';
+import { listFiles, ListFilesOptions } from './index';
 
-test('prefixes project name with `node-project:`', () => {
-    const name = 'viqueen';
-    expect(project(name)).toEqual(`node-project: ${name}`);
+test('lists javascript files in this project:', () => {
+    const options: ListFilesOptions = {
+        fileFilter: (entry) => entry.name.endsWith('.js'),
+        directoryFilter: (entry) =>
+            !['node_modules', 'coverage'].includes(entry.name)
+    };
+    const files = listFiles(process.cwd(), options);
+    expect(files.length).toBe(2);
 });

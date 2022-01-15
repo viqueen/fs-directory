@@ -1,7 +1,7 @@
 {
-  "name": "node-project",
+  "name": "fs-directory",
   "version": "1.0.0",
-  "description": "node project",
+  "description": "utility to work with directories on the file system",
   "scripts": {
     "build": "tsc --watch",
     "test": "jest --watchAll --collect-coverage",
@@ -18,11 +18,11 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/viqueen/node-project.git"
+    "url": "git+ssh://git@github.com/viqueen/fs-directory.git"
   },
   "keywords": [
-    "node",
-    "project"
+    "fs",
+    "directory"
   ],
   "author": "Hasnae R.",
   "license": "Apache-2.0",
