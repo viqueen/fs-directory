@@ -1,6 +1,9 @@
 ## fs-directory
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=viqueen_fs-directory&metric=alert_status)](https://sonarcloud.io/dashboard?id=viqueen_fs-directory)
+[![Known Vulnerabilities](https://snyk.io/test/github/viqueen/fs-directory/badge.svg?targetFile=package.json)](https://snyk.io/test/github/viqueen/fs-directory?targetFile=package.json)
+
+---
 
 ## use it
 
