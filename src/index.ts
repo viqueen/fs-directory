@@ -1,6 +1,6 @@
 import * as fs from 'fs';
-import path from 'path';
 import { Dirent } from 'fs';
+import path from 'path';
 
 const listNestedFiles = (
     directory: string,
