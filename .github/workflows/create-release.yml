@@ -1,4 +1,4 @@
-name: fs-directory Publish
+name: "@labset/fs-directory Publish"
 
 on:
   release:
@@ -17,6 +17,6 @@ jobs:
       - run: yarn build
       - run: yarn lint
       - run: yarn format:check
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

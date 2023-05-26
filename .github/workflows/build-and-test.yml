@@ -1,4 +1,4 @@
-name: node-project Test
+name: "@labset/fs-directory Build and Test"
 on:
   push:
     branches:
