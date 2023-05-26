@@ -1,0 +1,20 @@
+name: "@labset/fs-directory Build and Test"
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: yarn
+      - run: yarn build
+      - run: yarn lint
+      - run: yarn format:check
+      - run: yarn test
