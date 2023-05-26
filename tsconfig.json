@@ -14,7 +14,9 @@
     "strict": true,
     "jsx": "react"
   },
+  "include": ["src"],
   "exclude": [
+    "jest.config.ts",
     "node_modules",
     "dist",
     "coverage",
