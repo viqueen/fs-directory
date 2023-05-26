@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "utility to work with directories on the file system",
   "scripts": {
-    "build": "tsc --watch",
-    "test": "jest --watchAll --collect-coverage",
-    "ci:build": "tsc",
-    "ci:test": "jest",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "format:check": "prettier --check .",
     "format": "prettier --check --write ."
   },
